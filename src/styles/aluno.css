@@ -1,0 +1,174 @@
+
+.aluno-page {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .aluno-heading h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #202938;
+  }
+  
+  .aluno-heading p {
+    margin: 8px 0 0;
+    color: #1542a3;
+  }
+  
+  .aluno-resumo {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+  
+  .aluno-card {
+    background: #ffffff;
+    border: 1px solid #e8ebf0;
+    border-radius: 12px;
+    padding: 22px;
+  }
+  
+  .aluno-card span {
+    display: block;
+    color: #778196;
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  
+  .aluno-card strong {
+    display: block;
+    color: #202938;
+    font-size: 24px;
+  }
+  
+  .aluno-alerta {
+    padding: 16px;
+    background: #fff5e8;
+    color: #9a5a0a;
+    border: 1px solid #f2d8b5;
+    border-radius: 10px;
+  }
+  
+  .aluno-treinos {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .aluno-treinos > h2 {
+    margin: 0;
+    color: #202938;
+    font-size: 21px;
+  }
+  
+  .aluno-treino-card {
+    background: #fffdfd;
+    border: 1px solid #fdfeff;
+    border-radius: 12px;
+    padding: 22px;
+  }
+  
+  .aluno-treino-heading {
+    margin-bottom: 20px;
+  }
+  
+  .aluno-treino-heading span {
+    color: #6475d9;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .aluno-treino-heading h3 {
+    margin: 7px 0;
+    color: #202938;
+    font-size: 20px;
+  }
+  
+  .aluno-treino-heading p {
+    margin: 0;
+    color: #778196;
+    font-size: 14px;
+  }
+  
+  .aluno-exercicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 18px 0;
+    border-top: 1px solid #edf0f4;
+    flex-wrap: wrap;
+  }
+  
+  .aluno-exercicio-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 140px;
+  }
+  
+  .aluno-exercicio-info strong {
+    color: #202938;
+  }
+  
+  .aluno-exercicio-info span {
+    color: #778196;
+    font-size: 12px;
+  }
+  
+  .aluno-exercicio-dados {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .aluno-exercicio-dados div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .aluno-exercicio-dados strong {
+    color: #202938;
+    font-size: 15px;
+  }
+  
+  .aluno-exercicio-dados small {
+    color: #778196;
+    font-size: 11px;
+  }
+  
+  .aluno-link-demonstracao {
+    color: #5265d5;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .aluno-link-demonstracao:hover {
+    text-decoration: underline;
+  }
+  
+  .aluno-vazio {
+    color: #778196;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 768px) {
+    .aluno-resumo {
+      grid-template-columns: 1fr;
+    }
+  
+    .aluno-exercicio {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  
+    .aluno-exercicio-dados {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+  

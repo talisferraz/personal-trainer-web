@@ -1,0 +1,72 @@
+.senha-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 30px;
+  }
+  
+  .senha-card {
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  }
+  
+  .senha-card h1 {
+    margin-bottom: 12px;
+    color: #222;
+  }
+  
+  .senha-card p {
+    margin-bottom: 20px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .senha-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .senha-card label {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .senha-card input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+  
+  .senha-card button {
+    margin-top: 12px;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .senha-card button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .senha-sucesso {
+    margin-top: 18px;
+    color: #15803d !important;
+  }
+  
+  .senha-erro {
+    margin-top: 18px;
+    color: #dc2626 !important;
+  }

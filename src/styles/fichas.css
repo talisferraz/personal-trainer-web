@@ -1,0 +1,297 @@
+.fichas-page {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .fichas-heading h1 {
+    margin: 0 0 8px;
+    font-size: 26px;
+  }
+  
+  .fichas-heading p {
+    margin: 0;
+    color: #858c9b;
+    font-size: 14px;
+  }
+  
+  .fichas-card,
+  .fichas-editor {
+    background: white;
+    border: 1px solid #e8eaf0;
+    border-radius: 10px;
+    padding: 25px;
+  }
+  
+  .fichas-card h2,
+  .fichas-editor h2 {
+    margin: 0 0 12px;
+    font-size: 18px;
+  }
+  
+  .fichas-card label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  
+  .fichas-card select,
+  .campo-ficha input,
+  .campo-ficha select,
+  .treino-heading input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dfe2e9;
+    border-radius: 7px;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .fichas-card select {
+    max-width: 500px;
+  }
+  
+  .fichas-card select:focus,
+  .campo-ficha input:focus,
+  .campo-ficha select:focus,
+  .treino-heading input:focus {
+    border-color: #36c995;
+  }
+  
+  .fichas-versao-heading,
+  .fichas-editor-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .fichas-versao-heading p,
+  .fichas-editor-heading p {
+    margin: 0;
+    color: #858c9b;
+    font-size: 13px;
+  }
+  
+  .fichas-versao-heading button,
+  .fichas-editor-heading button,
+  .fichas-editor-acoes button {
+    padding: 12px 18px;
+    background: #16885e;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+  }
+  
+  .fichas-versao-heading button:disabled,
+  .fichas-editor-acoes button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .treino-card {
+    margin-top: 22px;
+    padding: 20px;
+    border: 1px solid #e8eaf0;
+    border-radius: 9px;
+    background: #fafbfc;
+  }
+  
+  .treino-heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 18px;
+  }
+  
+  .treino-heading input {
+    max-width: 250px;
+    font-weight: bold;
+  }
+  
+  .campo-ficha {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    min-width: 0;
+  }
+  
+  .campo-ficha label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #555d6d;
+  }
+  
+  .exercicio-ficha {
+    display: grid;
+    grid-template-columns: minmax(200px, 2fr) 0.7fr 1fr 1fr auto;
+    align-items: end;
+    gap: 12px;
+    padding: 18px 0;
+    border-bottom: 1px solid #e8eaf0;
+  }
+  
+  .botao-remover {
+    padding: 10px 12px;
+    border: 1px solid #f0caca;
+    border-radius: 6px;
+    background: #fff5f5;
+    color: #c03939;
+    cursor: pointer;
+  }
+  
+  .botao-adicionar-exercicio {
+    margin-top: 18px;
+    padding: 10px 15px;
+    border: 1px solid #cbd9f5;
+    border-radius: 6px;
+    background: #f1f5ff;
+    color: #315da8;
+    cursor: pointer;
+  }
+  
+  .fichas-editor-acoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+  }
+  
+  .fichas-editor-acoes .botao-publicar {
+    background: #315da8;
+  }
+  
+  .fichas-vazio {
+    padding: 20px;
+    color: #858c9b;
+    text-align: center;
+  }
+  
+  .fichas-alerta {
+    padding: 13px 16px;
+    border-radius: 7px;
+    font-size: 14px;
+  }
+  
+  .fichas-alerta.erro {
+    background: #fff0f0;
+    color: #b42323;
+  }
+  
+  .fichas-alerta.sucesso {
+    background: #e9f9f1;
+    color: #16885e;
+  }
+  
+  .historico-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 18px;
+  }
+  
+  .historico-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 14px;
+    border: 1px solid #edf0f4;
+    border-radius: 7px;
+  }
+  
+  .historico-item div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .historico-item small {
+    color: #858c9b;
+  }
+  
+  .status-atual,
+  .status-historico {
+    padding: 6px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .status-atual {
+    background: #d9f6eb;
+    color: #16885e;
+  }
+  
+  .status-historico {
+    background: #edf0f4;
+    color: #656d7c;
+  }
+  
+  .treino-publicado {
+    margin-top: 18px;
+    padding: 18px;
+    border: 1px solid #edf0f4;
+    border-radius: 8px;
+  }
+  
+  .treino-publicado h3 {
+    margin: 0 0 8px;
+  }
+  
+  .treino-publicado > p {
+    color: #858c9b;
+    font-size: 13px;
+  }
+  
+  .item-publicado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 13px 0;
+    border-top: 1px solid #edf0f4;
+    font-size: 13px;
+  }
+  
+  .item-publicado small {
+    color: #858c9b;
+  }
+  
+  @media (max-width: 900px) {
+    .exercicio-ficha {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .exercicio-selecao {
+      grid-column: 1 / -1;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .fichas-card,
+    .fichas-editor {
+      padding: 18px;
+    }
+  
+    .fichas-versao-heading,
+    .fichas-editor-heading,
+    .treino-heading {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  
+    .exercicio-ficha {
+      grid-template-columns: 1fr;
+    }
+  
+    .exercicio-selecao {
+      grid-column: auto;
+    }
+  
+    .treino-heading input {
+      max-width: none;
+    }
+  }
